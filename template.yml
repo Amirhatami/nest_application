@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Sample SAM Template
+
+# Create our resources with separate CloudFormation templates resources:
+Resources:
+  yourApplicationAliasName:
+    Type: AWS::Serverless::Application
+    Properties:
+      # Lambda function
+      Location: ./resources/lambda-functions.yml
